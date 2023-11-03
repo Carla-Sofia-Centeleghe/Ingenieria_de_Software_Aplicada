@@ -2,7 +2,7 @@ application {
   config {
     baseName blog
     applicationType monolith
-    packageName ar.edu.um.isa.blog
+    packageName ar.edu.um.carla.blog
     buildTool maven,
     devDatabaseType mariadb,
     prodDatabaseType mariadb,
