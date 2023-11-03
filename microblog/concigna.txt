@@ -1,0 +1,7 @@
+1_Crea una app con Jhister 
+
+2_Conectar una aplicación JHipster a Logstash
+
+En la práctica podrán utilizar la siguiente imagen docker: 
+https://github.com/deviantony/docker-elk
+Y configurar los logs de una aplicación jhipster al docker modificando la configuración del proyecto tal cual lo vimos en clase.
