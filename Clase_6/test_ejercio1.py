@@ -22,8 +22,8 @@ class TestMyApp(unittest.TestCase):
         login_button = driver.find_element(By.ID, "loginbtn")
 
         # Datos login
-        username.send_keys("c.centeleghe")
-        password.send_keys("conejo471")
+        username.send_keys("")
+        password.send_keys("")
         login_button.click()
 
         time.sleep(1)  # Espera 1 segundo
