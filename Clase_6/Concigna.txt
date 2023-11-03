@@ -1,0 +1,17 @@
+Test con Cypress
+
+Ejercicio:
+
+1_Programar un test en Cypress que permita comprobar el funcionamiento correcto de la encuesta que se encuentra como tema final de la cátedra:
+
+Ingrese a las cátedras vitruales de la Universidad, a la materia Ing. de Software Aplicada.
+Ingrese a la encuesta: https://virtual.um.edu.ar/mod/questionnaire/view.php?id=210589
+Responda las preguntas
+Comprobar que se haya podido enviar el formulario
+Ejemplo:
+
+En el siguiente link encontrarán un ejemplo de login utilizando el modelo Page Object. 
+
+https://github.com/fabiancontigliani/cypressdemo.git
+
+
