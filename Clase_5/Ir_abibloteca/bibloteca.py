@@ -1,3 +1,4 @@
+import unittest
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 import time
@@ -9,23 +10,23 @@ def search_for_book():
     # Inicializo el controlador de Chrome
     driver = webdriver.Chrome()
 
-    # Abrio la URL en el navegador
+    # Abro la URL en el navegador
     driver.get(url)
 
     # Espero 1 segundo mientras la página carga
     time.sleep(1)
 
-    # Encontro el campo de búsqueda y escribo el texto
+    # Encuentro el campo de búsqueda y escribo el texto
     search_field = driver.find_element(By.ID, "translControl1")
     search_field.send_keys("Ingeniería de Software de Pressman")
 
-    # Envio el formulario de búsqueda
+    # Envío el formulario de búsqueda
     driver.find_element(By.ID, "searchsubmit").submit()
 
-    # Espero 3 segundo para que cargaaparezcan los resultados
+    # Espero 3 segundos para que aparezcan los resultados
     time.sleep(3)
 
-    # Leo la pagina y veo si esta el libro que busco
+    # Leo la página y veo si está el libro que busco
     if "Ingeniería de Software de Pressman" in driver.page_source:
         print("El libro existe")
     else:
@@ -34,5 +35,12 @@ def search_for_book():
     # Cierro el navegador
     driver.quit()
 
+# Clase de prueba que hereda de unittest.TestCase
+class TestSearchForBook(unittest.TestCase):
+    def test_search_book(self):
+        # Ejecuto la función de búsqueda del libro
+        search_for_book()
+
+# Verifico si el archivo se ejecuta directamente y, en ese caso, ejecuto las pruebas
 if __name__ == "__main__":
-    search_for_book()
+    unittest.main()
